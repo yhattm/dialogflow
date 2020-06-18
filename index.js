@@ -1,10 +1,6 @@
 const express = require("express");
 const { WebhookClient, Card, Suggestion } = require("dialogflow-fulfillment");
-
-const bus = require("./src/bus");
-const { invest } = require("tslib");
-const gas = require("./src/gas");
-const token = require("./src/token");
+const { invest, bus, gas, token } = require("tslib");
 
 // bus.status().then(busStatus => console.log(busStatus))
 const app = express();
@@ -43,13 +39,13 @@ var processWebhook = (request, response) => {
   };
 
   const busToCompany = async agent => {
-    const busStatus = await bus.toCompany();
+    const busStatus = await bus.ToCompany();
     console.log(busStatus);
     agent.add(busStatus);
   };
 
   const busFromCompany = async agent => {
-    const busStatus = await bus.fromCompany();
+    const busStatus = await bus.FromCompany();
     console.log(busStatus);
     agent.add(busStatus);
   };
@@ -100,7 +96,7 @@ var processWebhook = (request, response) => {
   };
 
   const awsTokenFn = agent => {
-    const awsToken = token.getAWS();
+    const awsToken = token.GetAWS();
     console.log(awsToken);
     agent.add(awsToken);
   };
