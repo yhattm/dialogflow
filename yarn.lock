@@ -903,8 +903,8 @@ toidentifier@1.0.0:
   integrity sha512-yaOH/Pk/VEhBWWTlhI+qXxDFXlejDGcQipMlyxda9nthulaxLZUNcUqFxokp0vcYnvteJln5FNQDRrxj3YcbVw==
 
 "tslib@https://github.com/yhattm/tslib.git":
-  version "0.1.0"
-  resolved "https://github.com/yhattm/tslib.git#03dab805c68691c4447ee1ccc1818cf8b5cf1df4"
+  version "1.6.18"
+  resolved "https://github.com/yhattm/tslib.git#fdcd742a493e2089cd49be7af846cfe16b656a29"
   dependencies:
     cheerio "^1.0.0-rc.3"
     node-fetch "3.0.0-beta.7"
