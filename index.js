@@ -1,6 +1,6 @@
 const express = require("express");
 const { WebhookClient, Card, Suggestion } = require("dialogflow-fulfillment");
-const { invest, bus, gas, token } = require("tslib");
+const { invest, bus, gas, token } = require("yhattmtslib");
 
 // bus.status().then(busStatus => console.log(busStatus))
 const app = express();
